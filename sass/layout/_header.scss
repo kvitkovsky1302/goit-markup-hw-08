@@ -1,0 +1,103 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.navigation,
+.navigation-list {
+    display: flex;
+    align-items: center;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navigation-list-item {
+    &:not(:last-child) {
+        display: flex;
+        margin-right: 50px;
+    }
+}
+
+.contacts-list-item {
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.navigation-list-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include text($fw:500, $ls:0.02em);
+    color: $title-color;
+
+    transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.head-contacts {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include text($fw:500, $ls:0.02em);
+    color: $primary-text-color;
+    fill: currentColor;
+
+    transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.icon-mail {
+    display: flex;
+    margin-right: 10px;
+
+    transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
+    .head-contacts:hover &,
+    .head-contacts:focus & {
+        fill: $accent-color;
+    }
+
+}
+
+.icon-smartphone {
+    display: flex;
+    margin-right: 10px;
+
+    transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
+    .head-contacts:hover &,
+    .head-contacts:focus & {
+        fill: $accent-color;
+    }
+}
+
+.current {
+    position: relative;
+    color: $accent-color;
+
+    &::after {
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        content: '';
+        width: 100%;
+        height: 4px;
+    
+        background: $accent-color;
+        border-radius: 2px;
+    }
+}
+

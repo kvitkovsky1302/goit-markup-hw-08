@@ -1,0 +1,74 @@
+.footer {
+    background-color: $footer-background-color;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    
+    margin-right: 70px;
+    width: 231px;
+    @include text($fw:400, $lh:1.71);
+    color: rgba(255, 255, 255, 0.6);
+    
+    transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.address-item {
+    &:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+.address-map {
+    @include text($fw:400, $lh:1.71);
+    color: $social-icon-dark-theme;
+
+    transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.footer-submit {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-submit-form {
+    display: flex;
+}
+
+.footer-submit-input {
+    margin-right: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: inherit;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+
+    @include text($fw:400, $fs:16px, $lh:1.25);
+    color: $social-icon-dark-theme;
+    
+    &::placeholder {
+       @include text($fw:400, $fs:16px, $lh:1.25);
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+
