@@ -10,25 +10,25 @@
     }
 }
 
-// .footer-btn {
-//     display: flex;
-//     align-items: center;
-//     @include  button();
+.footer-btn {
+    display: flex;
+    align-items: center;
+    @include  button();
     
-//     padding: 10px 28px;
-//     transition: background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 10px 28px;
+    transition: background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
 
-//     &:hover,
-//     &:focus {
-//         @include btn-hover-focus();
-//     }
-// }
+    &:hover,
+    &:focus {
+        @include btn-hover-focus();
+    }
+}
 
 
-// .submit-icon {
-//     fill: currentColor;
-//     margin-left: 10px;
-// }
+.submit-icon {
+    fill: currentColor;
+    margin-left: 10px;
+}
 
 // .portfolio-list-btn {
 //     background: $secondary-background-color;

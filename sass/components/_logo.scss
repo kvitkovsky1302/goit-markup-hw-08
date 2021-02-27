@@ -15,19 +15,23 @@
 // }
 
 
-// .logo-color {
-//     color: $accent-color;
-// }
+.logo-color {
+    color: $accent-color;
+}
 
-// .footer-logo {
-//     @include text($fs:26px, $lh:1.19);
-//     font-family: $secondary-font;
-//     color: $social-icon-dark-theme;
-//     margin-bottom: 20px;
+.footer-logo {
+    @include text($fs:24px, $lh:1.17);
+    font-family: $secondary-font;
+    color: $social-icon-dark-theme;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        @include text($fs:26px, $lh:1.19);
+    }
     
-//     &:hover,
-//     &:focus {
-//         opacity: 0.5;
-//     }
-// }
+    &:hover,
+    &:focus {
+        opacity: 0.5;
+    }
+}
 
