@@ -1,20 +1,36 @@
 .section-info {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-.info-list {
-    display: flex;
-}
-
-.info-item {
-    max-width: 270px;
-    
-    &:not(:last-child) {
-        margin-right: 30px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
 
+.info-list {
+    margin: -15px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.info-item {
+    display: inline-block;
+    margin: 15px;
+
+    @media screen and (min-width: 768px) {
+        max-width: 354px;
+    }
+    
+    @media screen and (min-width: 1200px) {
+        max-width: 270px;
+    }
+}
 
 .info-icon {
     display: flex;
@@ -31,6 +47,10 @@
     @include text();
     text-transform: uppercase;
     color: $title-color;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .info-item-text {

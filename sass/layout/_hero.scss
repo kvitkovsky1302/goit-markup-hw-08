@@ -1,6 +1,6 @@
 .section-hero {
-    max-width: 1600px;
     margin: 0 auto;
+    max-width: 1600px;
     background-color: $background-hero-color;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
@@ -18,7 +18,23 @@
             url(../images/Hero/hero-mobile@2x.jpg);
     }
 
+    @media  screen and (min-width: 480px) {
+        width: 480px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/Hero/hero-mobile.jpg);
+    }
+
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
+    screen and (min-resolution: 192dpi) and (min-width: 480px),
+    screen and (min-resolution: 2dppx) and (min-width: 480px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/Hero/hero-mobile@2x.jpg);
+    }
+
     @media  screen and (min-width: 768px) {
+        width: 768px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/Hero/hero-tablet.jpg);
@@ -33,6 +49,7 @@
     }
     
     @media  screen and (min-width: 1200px) {
+        width: 1600px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
         url(../images/Hero/hero-desktop.jpg);

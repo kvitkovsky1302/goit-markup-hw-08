@@ -1,33 +1,33 @@
-.logo {
-    @include text($fs:26px, $lh:1.19);
+// .logo {
+//     @include text($fs:26px, $lh:1.19);
 
-    margin-right: 92px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+//     margin-right: 92px;
+//     padding-top: 24px;
+//     padding-bottom: 25px;
 
-    font-family: $secondary-font;
-    color: $title-color;
+//     font-family: $secondary-font;
+//     color: $title-color;
     
-    &:hover,
-    &:focus {
-        opacity: 0.5;
-    }
-}
+//     &:hover,
+//     &:focus {
+//         opacity: 0.5;
+//     }
+// }
 
 
-.logo-color {
-    color: $accent-color;
-}
+// .logo-color {
+//     color: $accent-color;
+// }
 
-.footer-logo {
-    @include text($fs:26px, $lh:1.19);
-    font-family: $secondary-font;
-    color: $social-icon-dark-theme;
-    margin-bottom: 20px;
+// .footer-logo {
+//     @include text($fs:26px, $lh:1.19);
+//     font-family: $secondary-font;
+//     color: $social-icon-dark-theme;
+//     margin-bottom: 20px;
     
-    &:hover,
-    &:focus {
-        opacity: 0.5;
-    }
-}
+//     &:hover,
+//     &:focus {
+//         opacity: 0.5;
+//     }
+// }
 
