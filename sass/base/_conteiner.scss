@@ -49,9 +49,11 @@
         }
     }
 
-    // .header & {
-    //     display: flex;
-    // }
+    .header & {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     // .section-hero & {
     //     display: flex;

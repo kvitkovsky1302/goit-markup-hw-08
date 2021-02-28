@@ -1,3 +1,39 @@
+.navigation-list {
+    display: none;
+}
+
+.contacts-list {
+    display: none;
+}
+
+.navigation {
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
+}
+
+.burger-btn {
+    display: inline-flex;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.burger-icon {
+    width: 40px;
+    height: 40px;
+}
+
+
 // .header {
 //     border-bottom: 1px solid #ececec;
 // }
