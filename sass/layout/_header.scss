@@ -1,31 +1,12 @@
-.navigation-list {
-    display: none;
-}
-
-.contacts-list {
-    display: none;
-}
-
-.navigation {
-    padding-top: 16px;
-    padding-bottom: 16px;
-
-    @media screen and (min-width: 768px) {
-        padding-top: 26px;
-        padding-bottom: 26px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 24px;
-        padding-bottom: 25px;
-    }
-}
-
 .burger-btn {
     display: inline-flex;
     background-color: transparent;
     border: none;
     padding: 0;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
 
 .burger-icon {
@@ -34,106 +15,169 @@
 }
 
 
-// .header {
-//     border-bottom: 1px solid #ececec;
-// }
+.header {
+    border-bottom: 1px solid #ececec;
+}
 
-// .navigation,
-// .navigation-list {
-//     display: flex;
-//     align-items: center;
-// }
+@media screen and (max-width:767px) {
+    .navigation-list {
+        display: none;
 
-// .contacts-list {
-//     display: flex;
-//     align-items: center;
-//     margin-left: auto;
-// }
+    }
 
-// .navigation-list-item {
-//     &:not(:last-child) {
-//         display: flex;
-//         margin-right: 50px;
-//     }
-// }
+    .contacts-list {
+        display: none;
+    }
+}
 
-// .contacts-list-item {
-//     &:not(:last-child) {
-//         margin-right: 30px;
-//     }
-// }
+@media screen and (min-width: 768px) {
 
-// .navigation-list-link {
-//     display: block;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//     @include text($fw:500, $ls:0.02em);
-//     color: $title-color;
+    .navigation {
+        display: flex;
+        align-items: center;
+    }
 
-//     transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+    .navigation-list {
+        display: flex;
+        align-items: center;
+        margin-right: 84px;
+    }
 
-//     &:hover,
-//     &:focus {
-//         color: $accent-color;
-//     }
-// }
+    .navigation-list-item {
+        &:not(:last-child) {
+            display: flex;
+            margin-right: 50px;
+        }
+    }
+}
 
-// .head-contacts {
-//     display: flex;
-//     align-items: center;
-//     padding-top: 32px;
-//     padding-bottom: 32px;
-//     @include text($fw:500, $ls:0.02em);
-//     color: $primary-text-color;
-//     fill: currentColor;
+@media screen and (min-width: 768px) {
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+}
 
-//     transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 1200px) {
+    .contacts-list {
+        flex-direction: row;
+        align-items: center;
+        margin-left: auto;
+    }
+}
 
-//     &:hover,
-//     &:focus {
-//         color: $accent-color;
-//     }
-// }
+.contacts-list-item {
+    &:not(:last-child) {
+        @media screen and (min-width: 768px) {
+            margin-bottom: 10px;
+        }
 
-// .icon-mail {
-//     display: flex;
-//     margin-right: 10px;
+        @media screen and (min-width: 1200px) {
+            margin-right: 30px;
+            margin-bottom: 0;
+        }
+    }
+}
 
-//     transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+.navigation-list-link {
+    display: block;
+    color: $title-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @include text($fw:500, $ls:0.02em);
 
-//     .head-contacts:hover &,
-//     .head-contacts:focus & {
-//         fill: $accent-color;
-//     }
 
-// }
+    transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
 
-// .icon-smartphone {
-//     display: flex;
-//     margin-right: 10px;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
 
-//     transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+.head-contacts {
+    display: flex;
+    align-items: center;
+    color: $primary-text-color;
+    fill: currentColor;
 
-//     .head-contacts:hover &,
-//     .head-contacts:focus & {
-//         fill: $accent-color;
-//     }
-// }
+    @include text($fw:500, $fs:12px, $lh:1.167, $ls:0.02em);
 
-// .current {
-//     position: relative;
-//     color: $accent-color;
+    @media screen and (min-width: 1200px) {
+        @include text($fw:500, $ls:0.02em);
+    }
 
-//     &::after {
-//         display: block;
-//         position: absolute;
-//         bottom: -1px;
-//         content: '';
-//         width: 100%;
-//         height: 4px;
+    transition: color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.icon-mail {
+    display: flex;
+    margin-right: 10px;
+
+    transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
+    .head-contacts:hover &,
+    .head-contacts:focus & {
+        fill: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 14px;
+        height: 10px;
+    }
     
-//         background: $accent-color;
-//         border-radius: 2px;
-//     }
-// }
+    @media screen and (min-width: 1200px) {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+
+.icon-smartphone {
+    display: flex;
+    margin-right: 10px;
+
+    transition: fill $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    .head-contacts:hover &,
+    .head-contacts:focus & {
+        fill: $accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 10px;
+        height: 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 10px;
+        height: 16px;
+    }
+}
+
+
+.current-tablet-desktop {
+    position: relative;
+    color: $accent-color;
+
+    &::after {
+        display: block;
+        position: absolute;
+        bottom: -1px;
+        content: '';
+        width: 100%;
+        height: 4px;
+    
+        background: $accent-color;
+        border-radius: 2px;
+    }
+}
 

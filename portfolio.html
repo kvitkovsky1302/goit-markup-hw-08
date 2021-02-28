@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="conteiner">
         <nav class="navigation">
           <a class="logo link" lang="en" href="index.html">
@@ -31,7 +31,9 @@
               >
             </li>
             <li class="navigation-list-item">
-              <a class="navigation-list-link current link" href="#"
+              <a
+                class="navigation-list-link current-tablet-desktop link"
+                href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
@@ -40,6 +42,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="burger-btn" data-menu-button>
+          <svg class="burger-icon">
+            <use href="./images/sprite-svg/sprite.svg#burger-icon"></use>
+          </svg>
+        </button>
         <ul class="contacts-list list">
           <li class="contacts-list-item">
             <a class="head-contacts link" href="mailto:info@devstudio.com">
@@ -61,7 +68,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- Portfolio section -->
       <section class="section-portfolio">
@@ -709,7 +716,7 @@
     <footer class="footer">
       <div class="conteiner">
         <div class="footer-contacts-list">
-          <a class="footer-logo link" lang="en" href="index.html">
+          <a class="footer-logo link" lang="en" href="./index.html">
             <span class="logo-color">Web</span>Studio
           </a>
           <address class="footer-address">
@@ -793,5 +800,61 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu" data-menu>
+      <button class="mobile-close-btn" data-menu-close>
+        <svg class="mobile-close-icon">
+          <use href="./images/sprite-svg/sprite.svg#close-icon"></use>
+        </svg>
+      </button>
+      <nav class="mobile-menu-nav">
+        <ul class="mobile-menu-nav-list list">
+          <li class="mobile-menu-nav-item">
+            <a
+              href="./index.html"
+              class="mobile-menu-nav-link link"
+              data-menu-close
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a class="mobile-menu-nav-link link current" href="./portfolio.html"
+              >Портфолио</a
+            >
+          </li>
+          <li class="mobile-menu-nav-item">
+            <a href="#" class="mobile-menu-nav-link link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-contacts">
+        <ul class="mobile-menu-contacts-list list">
+          <li class="mobile-menu-contacts-item">
+            <a class="mobile-menu-tel link" href="tel:+380961111111"
+              >+38 099 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu-contacts-item">
+            <a class="mobile-menu-mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social-list list">
+          <li class="mobile-social-item">
+            <a class="mobile-social-link link" href="#" lang="en">Instagram</a>
+          </li>
+          <li class="mobile-social-item">
+            <a class="mobile-social-link link" href="#" lang="en">Twitter</a>
+          </li>
+          <li class="mobile-social-item">
+            <a class="mobile-social-link link" href="#" lang="en">Facebook</a>
+          </li>
+          <li class="mobile-social-item">
+            <a class="mobile-social-link link" href="#" lang="en">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
