@@ -18,13 +18,6 @@
     @media screen and (min-width: 1200px) {
         @include text ($fw:900, $fs:44px, $lh:1.36, $ls:0.06em);
     }
-
-    // @include text($fw:900, $fs:44px, $lh:1.36, $ls:0.06em);
-    // max-width: 710px;
-    // text-align: center;
-    // text-transform: uppercase;
-    // color: $hero-title-color;
-    // margin-bottom: 30px;
 }
 
 .we-doing-title,

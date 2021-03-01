@@ -53,16 +53,16 @@
     }
 }
 
-// .submit-btn {
-//     @include button();
-//     min-height: 50px;
-//     margin-right: auto;
-//     margin-left: auto;
-//     padding: 10px 52px;
-//     transition: background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
+.submit-btn {
+    @include button();
+    min-height: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 52px;
+    transition: background-color $time-hover cubic-bezier(0.4, 0, 0.2, 1);
 
-//     &:hover,
-//     &:focus {
-//         @include btn-hover-focus();
-//     }
-// }
+    &:hover,
+    &:focus {
+        @include btn-hover-focus();
+    }
+}
