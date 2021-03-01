@@ -190,7 +190,7 @@
 
 .checkbox-label {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     @include text($fw:400,$fs:10px, $lh:1.167);
     color: $primary-text-color;
